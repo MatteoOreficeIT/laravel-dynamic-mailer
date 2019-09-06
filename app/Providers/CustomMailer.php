@@ -33,7 +33,7 @@ class CustomMailer extends AbstractDynamicMailerServiceProvider implements Defer
 
     /**
      * + the key in config/mail/dynamic.php for base options
-     * + the key prefix this container's instances are bound to plus '.dynamic.mailer'
+     * + the key prefix this container's instances are bound to ( '.dynamic.mailer' will be added )
      */
     protected function getPrefix() {        
         return 'custom';
