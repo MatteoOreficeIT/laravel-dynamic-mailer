@@ -5,22 +5,6 @@
  * 2. https://github.com/laravel/framework/blob/5.6/src/Illuminate/Mail/MailServiceProvider.php
  *
  * A service provider to register a custom mailer with Dynamic Options ( determined at Dependency Injection Container resolve-time )
- *
- * 1. resolve-time options: host, port, user, password, secure: [tls,ssl] could be determined at DI container resolve-time
- * 2. global options in mail.dynamic config file
- *
- * Define in mail.php such as structure for global options
- *
- *  'dynamic' => [
- *       'auth_mode' => 'plain',
- *       'timeout' => 2,            
- *       'stream' => [
- *           'ssl'=> [
- *               'verify_peer' => false,
- *               'verify_peer_name' => false,
- *           ]
- *       ]
- *   ],
  */
 
 namespace App\Providers;
